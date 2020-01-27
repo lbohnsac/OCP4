@@ -7,6 +7,7 @@
 PATH TO THE PREDEFINED VOLUME
 
 NFS SERVER FQDN
+
 in the registry.pv.yaml
 
 ##### Create the registry pv
