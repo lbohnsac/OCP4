@@ -15,7 +15,10 @@ Define an OpenShift Container Platform ConfigMap containing the certificate auth
 
 ##### Modify the ldap-ad.cr.yaml with the correct values
 
-Add BINDUSER
-And the PATH-TO-GROUP
+BINDUSER
+
+AD-SERVER-FQDN
+
+PATH-TO-GROUP
 
 :1.2.840.113556.1.4.1941: is needed if you have to search a nested group! (https://ldapwiki.com/wiki/LDAP_MATCHING_RULE_IN_CHAIN)
