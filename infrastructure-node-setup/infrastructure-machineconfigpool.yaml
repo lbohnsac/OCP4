@@ -1,0 +1,12 @@
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfigPool
+metadata:
+  name: infra
+spec:
+  machineConfigSelector:
+    matchLabels:
+      machineconfiguration.openshift.io/role: infra
+  nodeSelector:
+    matchLabels:
+    node-role.kubernetes.io/infra: ""
+  paused: false

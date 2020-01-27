@@ -1,0 +1,8 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+matadata:
+  name: openshift-logging
+  namespace: openshift-kogging
+spec:
+  targetNamespaces:
+  - "openshift-logging"
