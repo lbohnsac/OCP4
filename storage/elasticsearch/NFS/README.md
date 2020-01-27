@@ -7,9 +7,9 @@
 PATH TO THE PREDEFINED VOLUME
 
 NFS SERVER FQDN
-in the registry.pv.yaml
+in the elasticsearch-[1..3].pv.yaml
 
-##### Create the registry pv
+##### Create the elasticsearch pvs
     # oc apply -f elasticsearch-1.pv.yaml
     # oc apply -f elasticsearch-2.pv.yaml
     # oc apply -f elasticsearch-3.pv.yaml
