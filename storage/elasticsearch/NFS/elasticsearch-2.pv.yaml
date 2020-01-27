@@ -1,0 +1,14 @@
+piVersion: v1
+kind: PersistentVolume
+metadata:
+  name: elasticsearch-pv-2
+spec:
+  capacity:
+    storage: 100Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  nfs:
+    path: <PATH TO PREDEFINED VOLUME>
+    server: <FQDN OF NFS SERVER>
+    readOnly: false
