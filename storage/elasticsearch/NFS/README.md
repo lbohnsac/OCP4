@@ -7,6 +7,7 @@
 PATH TO THE PREDEFINED VOLUME
 
 NFS SERVER FQDN
+
 in the elasticsearch-[1..3].pv.yaml
 
 ##### Create the elasticsearch pvs
