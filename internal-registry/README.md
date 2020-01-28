@@ -9,5 +9,5 @@
 ##### Add pv storage to the registry
     # oc patch configs.imageregistry.operator.openshift.io cluster --type merge --patch '{"spec":{"storage":{"pvc":{"claim":""}}}}'
 
-##### PLace the registry on the infrastructure nodes
+##### Place the registry on the infrastructure nodes
     # oc patch configs.imageregistry.operator.openshift.io/cluster --type=merge -p '{"spec":{"nodeSelector":{"node-role.kubernetes.io/infra": ""}}}'
