@@ -11,7 +11,7 @@ To edit networkpolicy objects run
 ```
 # oc edit netpol NAME_OF POLICY -n NAMESPACE
 ```
- 
+
 If the default Ingress Controller configuration has the ``spec.endpointPublishingStrategy: HostNetwork`` value set, you must apply a label to the the default OpenShift Container Platform namespace to allow network traffic between the Ingress Controller and the project:
 
     Determine if your default Ingress Controller uses the HostNetwork endpoint publishing strategy:
@@ -26,4 +26,3 @@ If the default Ingress Controller configuration has the ``spec.endpointPublishin
 ```
 # oc label namespace default 'network.openshift.io/policy-group=ingress'
 ```
-
