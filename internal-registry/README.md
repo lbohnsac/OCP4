@@ -26,3 +26,9 @@
 # oc patch configs.imageregistry.operator.openshift.io/cluster --type=merge \
   -patch '{"spec":{"nodeSelector":{"node-role.kubernetes.io/infra": ""}}}'
 ```
+
+##### Set managementState to Managed (from 4.3)
+
+```
+# oc patch configs.imageregistry.operator.openshift.io cluster --type merge --patch '{"spec":{"managementState":"Managed"}}'
+```
