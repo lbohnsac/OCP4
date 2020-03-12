@@ -1,6 +1,0 @@
-default bootstrap
-prompt 0
-timeout 30
-label bootstrap
- kernel /openshift4/4.3.0/rhcos-4.3.0-x86_64-installer-kernel
- append ip=dhcp rd.neednet=1 coreos.inst.install_dev=vda console=tty0 console=ttyS0 coreos.inst=yes coreos.inst.image_url=http://192.168.100.254:8080/openshift4/4.3.0/images/rhcos-4.3.0-x86_64-metal.raw.gz coreos.inst.ignition_url=http://192.168.100.254:8080/openshift4/4.3.0/ignitions/bootstrap.ign initrd=/openshift4/4.3.0/rhcos-4.3.0-x86_64-installer-initramfs.img
