@@ -1,6 +1,6 @@
 apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
-matadata:
+metadata:
   name: openshift-logging
     namespace: openshift-logging
 spec:
