@@ -2,7 +2,7 @@
 
 ##### Check here which versions are available
 
-    # curl -s https://mirror.openshift.com/pub/openshift-v4/clients/ocp/ |awk '{print $5}'|grep -o '4.[0-9].[0-9]'
+    # curl -s https://mirror.openshift.com/pub/openshift-v4/clients/ocp/ |awk '{print $5}'|grep -o '4.[0-9].[0-9]*'
 
 ##### Set variable VERSION to the choosen version
 
