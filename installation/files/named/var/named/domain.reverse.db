@@ -1,0 +1,19 @@
+$TTL     1D
+@        IN  SOA dns.domain. root.domain. (
+                       2020010901 ; serial
+                       3h         ; refresh
+                       15         ; retry
+                       1w         ; expire
+                       3h         ; minimum
+                       )
+@       IN      NS      dns.domain.
+254     IN      PTR     dns.domain.
+10      IN      PTR     bootstrap.domain.
+21      IN      PTR     etcd-0.domain.
+22      IN      PTR     etcd-1.domain.
+23      IN      PTR     etcd-2.domain.
+31      IN      PTR     worker01.domain.
+32      IN      PTR     worker02.domain.
+33      IN      PTR     worker03.domain.
+34      IN      PTR     worker04.domain.
+

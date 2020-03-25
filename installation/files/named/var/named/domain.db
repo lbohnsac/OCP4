@@ -1,0 +1,29 @@
+$TTL     1D
+@        IN  SOA dns.domain. root.domain. (
+                       2020010901 ; serial
+                       3h         ; refresh
+                       15         ; retry
+                       1w         ; expire
+                       3h         ; minimum
+                       )
+                                IN      NS      dns.domain.
+dns.ocp4                        IN      A       192.168.100.254
+services.ocp4                   IN      CNAME   dns.ocp4
+*.apps.ocp4                     IN      A       192.168.100.254
+api.ocp4                        IN      A       192.168.100.254
+api-int.ocp4                    IN      A       192.168.100.254
+bootstrap.ocp4                  IN      A       192.168.100.10
+etcd-0.ocp4                     IN      A       192.168.100.21
+etcd-1.ocp4                     IN      A       192.168.100.22
+etcd-2.ocp4                     IN      A       192.168.100.23
+master01.ocp4                   IN      CNAME   etcd-0.ocp4
+master02.ocp4                   IN      CNAME   etcd-1.ocp4
+master03.ocp4                   IN      CNAME   etcd-2.ocp4
+worker01.ocp4                   IN      A       192.168.100.31
+worker02.ocp4                   IN      A       192.168.100.32
+worker03.ocp4                   IN      A       192.168.100.33
+worker04.ocp4                   IN      A       192.168.100.34
+workstation.ocp4                IN      A       192.168.100.253
+_etcd-server-ssl._tcp.ocp4      IN      SRV     0 10    2380 etcd-0.ocp4
+_etcd-server-ssl._tcp.ocp4      IN      SRV     0 10    2380 etcd-1.ocp4
+_etcd-server-ssl._tcp.ocp4      IN      SRV     0 10    2380 etcd-2.ocp4
