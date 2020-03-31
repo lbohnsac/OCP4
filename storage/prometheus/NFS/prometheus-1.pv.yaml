@@ -15,5 +15,5 @@ spec:
     server: <FQDN OF NFS SERVER>
     readOnly: false
   claimRef:
-    name: prometheus-pvc-prometheus-k8s-1
+    name: prometheus-pvc-prometheus-k8s-0
     namespace: openshift-monitoring
