@@ -12,3 +12,6 @@ spec:
     path: <PATH to the predifined volume>
     server: <NFS server FQDN>
     readOnly: false
+  claimRef:
+    name: image-registry-storage
+    namespace: openshift-image-registry
