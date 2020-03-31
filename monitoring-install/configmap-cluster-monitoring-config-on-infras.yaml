@@ -5,26 +5,44 @@ metadata:
   namespace: openshift-monitoring
 data:
   config.yaml: |
+    prometheusOperator:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
     prometheusK8s:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
       volumeClaimTemplate:
         metadata:
           name: prometheus-pvc
         spec:
           resources:
             requests:
-              storage: 100Gi
+              storage: 10Gi
           selector:
             matchLabels:
               infrapvc: "prometheus"
     alertmanagerMain:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
       volumeClaimTemplate:
         metadata:
           name: alertmanager-pvc
         spec:
           resources:
             requests:
-              storage: 20Gi
+              storage: 2Gi
           selector:
             matchLabels:
               infrapvc: "alertmanager"
-
+    kubeStateMetrics:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
+    grafana:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
+    telemeterClient:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
+    k8sPrometheusAdapter:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
