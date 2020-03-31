@@ -14,3 +14,6 @@ spec:
     path: <PATH TO PREDEFINED VOLUME>
     server: <FQDN OF NFS SERVER>
     readOnly: false
+  claimRef:
+    name: prometheus-pvc-prometheus-k8s-1
+    namespace: openshift-monitoring
