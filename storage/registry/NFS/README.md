@@ -11,4 +11,4 @@ NFS SERVER FQDN
 in the registry.pv.yaml
 
 ##### Create the registry pv
-    # oc apply -f registry.pv.yaml
+    # oc create -f registry.pv.yaml
