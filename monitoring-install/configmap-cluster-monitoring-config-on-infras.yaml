@@ -1,3 +1,5 @@
+---
+# configmap-cluster-monitoring-on-infras.yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -17,7 +19,7 @@ data:
         spec:
           resources:
             requests:
-              storage: 10Gi
+              storage: 100Gi
           selector:
             matchLabels:
               infrapvc: "prometheus"
@@ -30,7 +32,7 @@ data:
         spec:
           resources:
             requests:
-              storage: 2Gi
+              storage: 20Gi
           selector:
             matchLabels:
               infrapvc: "alertmanager"
@@ -46,3 +48,4 @@ data:
     k8sPrometheusAdapter:
       nodeSelector:
         node-role.kubernetes.io/infra: ""
+...
