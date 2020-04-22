@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -17,3 +18,4 @@ spec:
   claimRef:
     name: prometheus-pvc-prometheus-k8s-1
     namespace: openshift-monitoring
+    ...
