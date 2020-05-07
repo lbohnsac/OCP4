@@ -1,0 +1,21 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: prometheus-pv-1
+  labels:
+    infrapvc: prometheus
+spec:
+  capacity:
+    storage: 100Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  nfs:
+    path: <PATH TO PREDEFINED VOLUME>
+    server: <FQDN OF NFS SERVER>
+    readOnly: false
+  claimRef:
+    name: prometheus-pvc-prometheus-k8s-1
+    namespace: openshift-monitoring
+...

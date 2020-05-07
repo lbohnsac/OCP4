@@ -1,14 +1,11 @@
 # Disabling Self-Provisioning
 
 
-##### Set autoupdate annotation to false
-
+## Set autoupdate annotation to false
 ```
 # oc annotate clusterrolebinding self-provisioners rbac.authorization.kubernetes.io/autoupdate=false --overwrite
 ```
-
-##### Then remove cluster role self-provisioner from system group system:authenticated:oauth
-
+## Then remove cluster role self-provisioner from system group system:authenticated:oauth
 ```
 # oc adm policy remove-cluster-role-from-group self-provisioner system:authenticated:oauth
 ```

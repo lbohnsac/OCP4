@@ -1,9 +1,9 @@
 apiVersion: v1
 baseDomain: example.com                            <-- CHANGE ME
-proxy:                                             <-- CHANGE ME
-  httpProxy: http://<username>:<pswd>@<ip>:<port>  <-- CHANGE ME
-  httpsProxy: http://<username>:<pswd>@<ip>:<port> <-- CHANGE ME
-  noProxy: example.com                             <-- CHANGE ME
+proxy:                                             <-- CHANGE OR DELETE ME
+  httpProxy: http://<username>:<pswd>@<ip>:<port>  <-- CHANGE OR DELETE ME
+  httpsProxy: http://<username>:<pswd>@<ip>:<port> <-- CHANGE OR DELETE ME
+  noProxy: example.com                             <-- CHANGE OR DELETE ME
 compute:
 - hyperthreading: Enabled
   name: worker

@@ -1,3 +1,4 @@
+---
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfigPool
 metadata:
@@ -10,3 +11,4 @@ spec:
     matchLabels:
       node-role.kubernetes.io/infra: ""
   paused: false
+...
