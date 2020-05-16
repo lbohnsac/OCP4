@@ -47,4 +47,7 @@ data:
     k8sPrometheusAdapter:
       nodeSelector:
         node-role.kubernetes.io/infra: ""
+    openshiftStateMetrics:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ""
 ...
