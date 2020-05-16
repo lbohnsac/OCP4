@@ -1,0 +1,41 @@
+---
+apiVersion: logging.openshift.io/v1
+kind: ClusterLogging
+metadata:
+  name: "instance"
+  namespace: "openshift-logging"
+spec:
+  managementState: "Managed"
+  logStore:
+    type: "elasticsearch"
+    elasticsearch:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ''
+      nodeCount: 3
+      storage:
+        size: 100G
+        storageClassName: ""
+      redundancyPolicy: "SingleRedundancy"
+      resources:
+        limits:
+          memory: "16Gi"
+        requests:
+          cpu: "1"
+          memory: "16Gi"
+  visualization:
+    type: "kibana"
+    kibana:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ''
+      replicas: 1
+  curation:
+    type: "curator"
+    curator:
+      nodeSelector:
+        node-role.kubernetes.io/infra: ''
+      schedule: "30 3 * * *"
+  collection:
+    logs:
+      type: "fluentd"
+      fluentd: {}
+...
