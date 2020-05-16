@@ -1,4 +1,4 @@
-# Install the local-storage-operator
+# Install the local-storage-operator (new since 4.4.3)
 
 #### Create the namespace local-storage
 ```
