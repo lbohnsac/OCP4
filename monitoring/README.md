@@ -8,7 +8,7 @@ oc create -f namespace-es.yaml
 ```
 oc create -f operatorgroup-es.yaml
 ```
-## Check software-version
+## Check available software-version of the operator
 ```
 oc get packagemanifest elasticsearch-operator -n openshift-marketplace \
 -o jsonpath='{.status.defaultChannel}'
@@ -30,7 +30,7 @@ oc create -f rbac-es.yaml
 ```
 oc create -f configmap-cluster-monitoring-config.yaml
 ```
-or for infra nodes
+or if infra nodes are available
 ```
 oc create -f configmap-cluster-monitoring-config-on-infras.yaml
 ```
