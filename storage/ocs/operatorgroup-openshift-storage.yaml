@@ -1,0 +1,10 @@
+---
+apiVersion: operators.coreos.com/v1alpha2
+kind: OperatorGroup
+metadata:
+  generateName: openshift-storage-
+  namespace: openshift-storage
+spec:
+  targetNamespaces:
+    - openshift-storage
+...
