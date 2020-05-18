@@ -1,3 +1,4 @@
+---
 apiVersion: ocs.openshift.io/v1
 kind: StorageCluster
 metadata:
@@ -30,3 +31,4 @@ spec:
     portable: false
     replica: 3
     resources: {}
+...
