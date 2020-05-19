@@ -32,3 +32,9 @@
 ```
 # oc patch configs.imageregistry.operator.openshift.io cluster --type merge --patch '{"spec":{"managementState":"Managed"}}'
 ```
+# Expose the registry to have access from outside the cluster
+## Expose the default route
+
+```
+oc patch configs.imageregistry,operator.openshift.io/cluster --type=merge --patch '{{"spec": {"defaultRoute": true}}'
+```
