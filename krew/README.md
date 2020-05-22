@@ -1,6 +1,6 @@
 # KREW
 
-## Installing KREW
+##### Installing KREW
 
 ```
 # (
@@ -17,13 +17,13 @@
 # export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 ```
 
-## Update KREW plugins
+##### Update KREW plugins
 
 ```
 # kubectl krew update
 ```
 
-## Search KREW plugins
+##### Search KREW plugins
 
 ```
 # kubectl krew search
@@ -34,13 +34,13 @@ auth-proxy                      Authentication proxy to a pod or service        
 [...]
 ```
 
-## Install a KREW plugin
+##### Install a KREW plugin
 
 ```
 kubectl krew install access-matrix
 ```
 
-## Uninstall a KREW plugin
+##### Uninstall a KREW plugin
 
 ```
 kubectl krew uninstall access-matrix
