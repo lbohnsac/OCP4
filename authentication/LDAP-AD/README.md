@@ -27,4 +27,4 @@ AD-SERVER-FQDN
 
 PATH-TO-GROUP
 
-:1.2.840.113556.1.4.1941: is needed if you have to search a nested group! (https://ldapwiki.com/wiki/LDAP_MATCHING_RULE_IN_CHAIN)
+`:1.2.840.113556.1.4.1941:` is needed if you have to search a nested group! (https://ldapwiki.com/wiki/LDAP_MATCHING_RULE_IN_CHAIN)
