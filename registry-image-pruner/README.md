@@ -18,5 +18,5 @@ are already set
 
 ```
 # oc patch imagepruners.imageregistry.operator.openshift.io cluster --type=merge \
-  --patch '{"spec":{"schedule": "*/0 * * * *"}}'
+  --patch '{"spec":{"schedule": "0 0 * * *"}}'
 ```
