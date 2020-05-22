@@ -1,6 +1,6 @@
 # Download and install Openshift 4.x CLI
 
-## Check here which versions are available
+#### Check here which versions are available
 
 ```
 # curl -s https://mirror.openshift.com/pub/openshift-v4/clients/ocp/ | \
@@ -13,7 +13,7 @@
   column
 ```
 
-## Set variable VERSION to the choosen version
+#### Set variable VERSION to the choosen version
 
 ```
 ### Set OpenShift Version
