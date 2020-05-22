@@ -1,32 +1,32 @@
 # Install monitoring (elasticsearch)
 
-## Create namespace 
+#### Create namespace 
 ```
 oc create -f namespace-es.yaml
 ```
-## Create operatorgroup
+#### Create operatorgroup
 ```
 oc create -f operatorgroup-es.yaml
 ```
-## Check available software-version of the operator
+#### Check available software-version of the operator
 ```
 oc get packagemanifest elasticsearch-operator -n openshift-marketplace \
 -o jsonpath='{.status.defaultChannel}'
 ```
-#### Modify the following value
+###### Modify the following value
 SOFTWARE-VERSION
 
 in operator-subscription-es.yaml
 
-## Create subscription
+#### Create subscription
 ```
 oc create -f operator-subscrion-es.yaml
 ```
-## Create rbac for es
+#### Create rbac for es
 ```
 oc create -f rbac-es.yaml
 ```
-## Configure monitoring via the configmap 
+#### Configure monitoring via the configmap 
 ```
 oc create -f configmap-cluster-monitoring-config.yaml
 ```
