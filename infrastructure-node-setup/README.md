@@ -125,7 +125,7 @@ oc patch ingresscontrollers.operator.openshift.io default -n openshift-ingress-o
 oc patch configs.imageregistry.operator.openshift.io cluster --type=merge \
 -p '{"spec":{"nodeSelector":{"node-role.kubernetes.io/infra": ""}}}'
 ```
-#### Move the registry image pruner (from 4.4) to the infra nodes
+#### Move the [registry image pruner](https://github.com/lbohnsac/OCP4/blob/master/registry-image-pruner/README.md#registry-image-pruner-from-44) (from 4.4) to the infra nodes
 ```
 oc patch imagepruners.imageregistry.operator.openshift.io cluster --type=merge \
   --patch '{"spec":{"nodeSelector": {"node-role.kubernetes.io/infra": ""}}}'
