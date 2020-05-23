@@ -123,10 +123,15 @@ oc patch ingresscontrollers.operator.openshift.io default -n openshift-ingress-o
 #### Move the [internal image registry](https://github.com/lbohnsac/OCP4/tree/master/internal-registry#internal-registry-setup) to the infra nodes
 ```
 oc patch configs.imageregistry.operator.openshift.io cluster --type=merge \
--p '{"spec":{"nodeSelector":{"node-role.kubernetes.io/infra": ""}}}'
+  --patch '{"spec":{"nodeSelector":{"node-role.kubernetes.io/infra": ""}}}'
 ```
 #### Move the [registry image pruner](https://github.com/lbohnsac/OCP4/blob/master/registry-image-pruner/README.md#registry-image-pruner-from-44) (from 4.4) to the infra nodes
 ```
 oc patch imagepruners.imageregistry.operator.openshift.io cluster --type=merge \
   --patch '{"spec":{"nodeSelector": {"node-role.kubernetes.io/infra": ""}}}'
+```
+#### Move the Kibana pod to the infras
+```
+oc patch clusterloggings.logging.openshift.io instance -n openshift-logging --type=merge \
+  --patch '{"spec":{"visualization":{"kibana":{"nodeSelector":{"node-role.kubernetes.io/master":""}}}}}'
 ```
