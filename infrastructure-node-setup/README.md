@@ -140,3 +140,8 @@ oc patch clusterloggings.logging.openshift.io instance -n openshift-logging --ty
 oc patch clusterloggings.logging.openshift.io instance -n openshift-logging --type=merge \
   --patch '{"spec":{"curation":{"curator":{"nodeSelector":{"node-role.kubernetes.io/infra":""}}}}}'
 ```
+#### Move the elasticsearch pods to the infras
+```
+oc patch clusterloggings.logging.openshift.io instance -n openshift-logging --type=merge \
+  --patch '{"spec":{"logStore":{"elasticsearch":{"nodeSelector":{"node-role.kubernetes.io/infra":""}}}}}'
+```
