@@ -146,3 +146,8 @@ oc patch clusterloggings.logging.openshift.io instance -n openshift-logging --ty
 oc patch clusterloggings.logging.openshift.io instance -n openshift-logging --type=merge \
   --patch '{"spec":{"logStore":{"elasticsearch":{"nodeSelector":{"node-role.kubernetes.io/infra":""}}}}}'
 ```
+### Move the monitoring bits
+
+> There's no chance to do that by an oc patch command!
+
+Apply a new (modified) configmap that looks like [this](../logging/custom-resource-definition-logging-on-infras.yaml)
