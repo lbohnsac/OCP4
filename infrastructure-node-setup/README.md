@@ -135,3 +135,7 @@ oc patch imagepruners.imageregistry.operator.openshift.io cluster --type=merge \
 oc patch clusterloggings.logging.openshift.io instance -n openshift-logging --type=merge \
   --patch '{"spec":{"visualization":{"kibana":{"nodeSelector":{"node-role.kubernetes.io/infra":""}}}}}'
 ```
+#### Move the curator pod to the infras
+```
+oc patch clusterloggings.logging.openshift.io instance -n openshift-logging --type=merge --patch '{"spec":{"curation":{"curator":{"nodeSelector":{"node-role.kubernetes.io/infra":""}}}}}'
+```
