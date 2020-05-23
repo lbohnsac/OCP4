@@ -130,6 +130,7 @@ oc patch configs.imageregistry.operator.openshift.io cluster --type=merge \
 oc patch imagepruners.imageregistry.operator.openshift.io cluster --type=merge \
   --patch '{"spec":{"nodeSelector": {"node-role.kubernetes.io/infra": ""}}}'
 ```
+### Move the logging bits
 #### Move the Kibana pod to the infras
 ```
 oc patch clusterloggings.logging.openshift.io instance -n openshift-logging --type=merge \
