@@ -110,6 +110,8 @@ oc label node <NODE-NAME> node-role.kubernetes.io/worker-
 ```
 ## Use the infra structure nodes
 
+### Move the router bits
+
 #### Move the internal routers to the infra nodes
 ```
 oc patch ingresscontrollers.operator.openshift.io default -n openshift-ingress-operator --type=merge \
@@ -120,6 +122,8 @@ oc patch ingresscontrollers.operator.openshift.io default -n openshift-ingress-o
 oc patch ingresscontrollers.operator.openshift.io default -n openshift-ingress-operator --type=merge \
   --patch '{"spec":{"replicas": 3}}'
 ```
+### Move the registry bits
+
 #### Move the [internal image registry](../internal-registry#internal-registry-setup) to the infra nodes
 ```
 oc patch configs.imageregistry.operator.openshift.io cluster --type=merge \
