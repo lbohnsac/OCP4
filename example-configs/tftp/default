@@ -5,7 +5,7 @@ menu title **** OpenShift 4.3 PXE Boot Menu ****
 
 label Install CoreOS 4.3.0 Bootstrap Node
  kernel /openshift/4.3.0/rhcos-4.3.0-x86_64-installer-kernel
- append ip=dhcp rd.neednet=1 coreos.inst.install_dev=sda console=tty0 console=ttyS0 coreos.inst=yes coreos.inst.image_url=http://<IP or FQDN httpd server>:8080/openshift/4.3.0/images/rhcos-4.3.0-x86_64-metal.raw.gz coreos.inst.ignition_url=http://<FQDN or IP httpd server>:8080/openshift/4.3.0/ignitions/bootstrap.ign initrd=/openshift/4.3.0/rhcos-4.3.0-x86_64-installer-initramfs.img
+ append ip=dhcp rd.neednet=1 coreos.inst.install_dev=sda console=tty0 console=ttyS0 coreos.inst=yes coreos.inst.image_url=http://<FQDN or IP httpd server>:8080/openshift/4.3.0/images/rhcos-4.3.0-x86_64-metal.raw.gz coreos.inst.ignition_url=http://<FQDN or IP httpd server>:8080/openshift/4.3.0/ignitions/bootstrap.ign initrd=/openshift/4.3.0/rhcos-4.3.0-x86_64-installer-initramfs.img
 
 label Install CoreOS 4.3.0 Master Node
  kernel /openshift/4.3.0/rhcos-4.3.0-x86_64-installer-kernel
