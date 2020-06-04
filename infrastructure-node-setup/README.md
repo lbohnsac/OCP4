@@ -2,7 +2,7 @@
 
 #### Create a new machineconfigpool infra
 ```
-oc create -f infra-machineconfigpool.yaml
+oc create -f infrastructure-machineconfigpool.yaml
 ```
 #### List the existing worker machineconfigs
 ```
