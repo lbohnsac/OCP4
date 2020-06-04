@@ -30,10 +30,10 @@ in operator-subscription-es.yaml
 
 #### Create subscriptions
 ```
-oc create -f operator-subscrion-es.yaml
+oc create -f operator-subscription-es.yaml
 ```
 ```
-oc create -f operator-subscrion-loggging.yaml
+oc create -f operator-subscription-loggging.yaml
 ```
 
 #### Create Role-based Access Control (RBAC) for Prometheus
