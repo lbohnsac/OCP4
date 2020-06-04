@@ -77,3 +77,6 @@ oc create -f custom-resource-definition-logging-on-infras.yaml
 ```
 oc get pods -o wide -n openshift-logging
 ```
+```
+oc get pods -o wide -n openshift-monitoring
+```
