@@ -4,7 +4,7 @@ kind: MachineConfig
 metadata:
   labels:
     machineconfiguration.openshift.io/role: infra
-  name: infras-chrony-configuration
+  name: 90-infras-chrony-configuration
 spec:
   config:
     ignition:
