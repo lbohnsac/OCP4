@@ -7,7 +7,7 @@
   awk '{print $5}' | \
   grep -v latest | \
   grep -v Parent | \
-  grep -o '4.[0-9]*.[0-9]*' | \
+  grep -o '\<4.[0-9]*.[0-9]*\>' | \
   uniq | \
   sort | \
   column
