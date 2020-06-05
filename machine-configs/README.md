@@ -1,5 +1,6 @@
 # Configuring chrony time service
 
+If the cluster was already deployed and we have to update the machine configuration after cluster deployment just base64 encode the desired content of /etc/chrony.conf, for example as follows:
 ```
 cat << EOF | base64 -w0
 server clock.redhat.com iburst
