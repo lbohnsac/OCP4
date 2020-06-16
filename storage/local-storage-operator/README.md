@@ -12,7 +12,8 @@ oc create -f operatorgroup-local-storage.yaml
 
 #### Check which software version of the operator is available
 ```
-oc get packagemanifest local-storage-operator -n openshift-marketplace -o jsonpath='{.status.defaultChannel}'
+oc get packagemanifest local-storage-operator -n openshift-marketplace \
+  --template='{{range .status.channels}}{{.name}}{{"\n"}}{{end}}'
 ```
 
 #### Replace <SOFTWARE-VERSION> in subscription-local-storage.yaml and create it
