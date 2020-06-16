@@ -43,5 +43,5 @@ The command generates a hashed version of the password
 ##### Patch htpasswd secret data with content from file
 
 ```
-# oc patch secret htpasswd -n openshift-config -p '{"data":{"htpasswd":"'$(base64 -w0 htpasswd)'"}}'
+# oc patch secret htpasswd -n openshift-config -p '{"data":{"htpasswd":"'$(base64 -w0 htpasswd-secret)'"}}'
 ```
