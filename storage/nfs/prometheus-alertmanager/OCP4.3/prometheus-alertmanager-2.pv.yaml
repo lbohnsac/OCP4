@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: monitoring-alertmgr-pv-1
+  name: monitoring-alertmgr-pv-2
   labels:
     infrapvc: alertmanager
 spec:
@@ -15,5 +15,5 @@ spec:
     server: <FQDN OF NFS SERVER>
     readOnly: false
   claimRef:
-    name: alertmanager-pvc-alertmanager-main-0
+    name: alertmanager-main-db-alertmanager-main-2
     namespace: openshift-monitoring

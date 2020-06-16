@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: monitoring-alertmgr-pv-0
+  labels:
+    infrapvc: alertmanager
+spec:
+  capacity:
+    storage: 20Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  nfs:
+    path: <PATH TO PREDEFINED STORAGE>
+    server: <FQDN OF NFS SERVER>
+    readOnly: false
+  claimRef:
+    name: alertmanager-pvc-alertmanager-main-0
+    namespace: openshift-monitoring
