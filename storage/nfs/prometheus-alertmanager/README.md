@@ -10,9 +10,9 @@ PATH TO THE PREDEFINED VOLUME
 
 NFS SERVER FQDN
 
-in the prometheus-alertmanager[13].pv.yaml
+in the prometheus-alertmanager[0..2].pv.yaml
 
 ##### Create the prometheus pvs
     # oc apply -f prometheus-alertmanager-0.pv.yaml
-    # oc apply -f prometheus-alertmanager-2.pv.yaml
+    # oc apply -f prometheus-alertmanager-1.pv.yaml
     # oc apply -f prometheus-alertmanager-2.pv.yaml
