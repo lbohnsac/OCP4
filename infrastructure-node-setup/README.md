@@ -29,7 +29,7 @@ oc get mc 99-worker-ssh -o yaml > 99-infra-ssh.yaml
 sed -i \
 -e '/annotations/,+1d' \
 -e '/creationTimestamp/d' \
--e'/generation/d' \
+-e '/generation/d' \
 -e '/ownerReference/,+6d' \
 -e '/resourceVersion/d' \
 -e '/selfLink/d' \
@@ -41,7 +41,7 @@ sed -i \
 sed -i \
 -e '/annotations/,+1d' \
 -e '/creationTimestamp/d' \
--e'/generation/d' \
+-e '/generation/d' \
 -e '/ownerReference/,+6d' \
 -e '/resourceVersion/d' \
 -e '/selfLink/d' \
@@ -53,7 +53,7 @@ sed -i \
 sed -i \
 -e '/annotations/,+1d' \
 -e '/creationTimestamp/d' \
--e'/generation/d' \
+-e '/generation/d' \
 -e '/ownerReference/,+6d' \
 -e '/resourceVersion/d' \
 -e '/selfLink/d' \
@@ -65,7 +65,7 @@ sed -i \
 sed -i \
 -e '/annotations/,+1d' \
 -e '/creationTimestamp/d' \
--e'/generation/d' \
+-e '/generation/d' \
 -e '/ownerReference/,+4d' \
 -e '/resourceVersion/d' \
 -e '/selfLink/d' \
@@ -77,7 +77,7 @@ sed -i \
 sed -i \
 -e '/annotations/,+1d' \
 -e '/creationTimestamp/d' \
--e'/generation/d' \
+-e '/generation/d' \
 -e '/ownerReference/,+6d' \
 -e '/resourceVersion/d' \
 -e '/selfLink/d' \
