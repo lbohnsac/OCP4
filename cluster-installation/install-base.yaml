@@ -26,6 +26,10 @@ platform:
 fips: false
 pullSecret: '{"auths": ...}'                          <-- CHANGE ME
 sshKey: 'ssh-ed25519 AAAA...'                         <-- CHANGE ME
+additionalTrustBundle: |                              <-- CHANGE OR DELETE ME
+  -----BEGIN CERTIFICATE-----                         <-- CHANGE OR DELETE ME
+  ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ  <-- CHANGE OR DELETE ME
+  -----END CERTIFICATE-----                           <-- CHANGE OR DELETE ME
 imageContentSources:                                  <-- CHANGE OR DELETE ME
 - mirrors:                                            <-- CHANGE OR DELETE ME
   - <bastion_host_name>:5000/<repo_name>/release      <-- CHANGE OR DELETE ME
