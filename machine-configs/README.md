@@ -28,3 +28,7 @@ oc apply -f  90_masters-chrony-configuration.yaml
 ```
 
 Do the same for each mcp you have configured e.g. worker and infra ...
+
+> RHCOS machines are configured to run **UTC** timezone by default
+>
+> Changing the timezone isn't supported
