@@ -19,7 +19,7 @@ Replace <CHRONY-CONFIG> with the resulting string in
 90_masters-chrony-configuration.yaml
 
 ```
-sed -i 's/<CHRONY-CONFIG>/<BASE64-ENCODED-STRING>' 90_masters-chrony-configuration.yaml
+sed -i 's/<CHRONY-CONFIG>/<BASE64-ENCODED-STRING>/' 90_masters-chrony-configuration.yaml
 ```
 
 Apply the new machine-config
