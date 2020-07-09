@@ -1,0 +1,14 @@
+---
+apiVersion: operator.openshift.io/v1alpha1
+kind: ImageContentSourcePolicy
+metadata:
+  name: example
+spec:
+  repositoryDigestMirrors:
+  - mirrors:
+    - registry.example.local:5000/ocp4/ocp4_3_8
+    source: quay.io/openshift-release-dev/ocp-release
+  - mirrors:
+    - registry.example.local:5000/ocp4/ocp4_3_8
+    source: quay.io/openshift-release-dev/ocp-v4.0-art-dev
+...
