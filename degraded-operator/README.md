@@ -6,22 +6,22 @@ From time to time either `kube-apiserver`, `kube-controller-manager`, `kube-sche
 #### Redeploy kube-apiserver static pods
 ```
 # oc patch kubeapiserver/cluster --type merge \
-    --patch "{'spec':{'forceRedeploymentReason':\"Forcing new revision with random number $RANDOM to make message unique\"}}"
+    --patch "{\"spec\":{\"forceRedeploymentReason\":\"Forcing new revision with random number $RANDOM to make message unique\"}}"
 ```
 #### Redeploy kube-controller-manager static pods
 ```
 # oc patch kubecontrollermanager/cluster --type merge \
-    --patch "{'spec':{'forceRedeploymentReason':\"Forcing new revision with random number $RANDOM to make message unique\"}}"
+    --patch "{\"spec\"\"forceRedeploymentReason\":\"Forcing new revision with random number $RANDOM to make message unique\"}}"
 ```
 #### Redeploy kube-scheduler static pods
 ```
 # oc patch kubescheduler/cluster --type merge \
-    --patch "{'spec':{'forceRedeploymentReason':\"Forcing new revision with random number $RANDOM to make message unique\"}}"
+    --patch "{\"spec\":{'forceRedeploymentReason':\"Forcing new revision with random number $RANDOM to make message unique\"}}"
 ```
 #### Redeploy etcd static pods
 Since OpenShift 4.4 we have an etcd-operator too
 
 ```
 # oc patch etcd/cluster --type merge \
-    --patch "{'spec':{'forceRedeploymentReason':\"Forcing new revision with random number $RANDOM to make message unique\"}}"
+    --patch "{\"spec\":{|\"orceRedeploymentReason\":\"Forcing new revision with random number $RANDOM to make message unique\"}}"
 ```
