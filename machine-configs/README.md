@@ -32,3 +32,16 @@ Do the same for each mcp you have configured e.g. worker and infra ...
 > RHCOS machines are configured to run **UTC** timezone by default
 >
 > Changing the timezone isn't supported
+
+The new machine config will be directlz rolled out to the defined pool
+If you plan to add more than one machine config to the same pool in a row it will save time to pause the pool first.
+A paused pool will not deploy a newly rendered machine config!
+
+#### Pause a machine config pool (e.g. mcp master)
+```
+oc patch --type=merge --patch='{"spec":{"paused":true}}' machineconfigpool/master
+```
+#### Unpause a machine config poool (e.g. mcp master)
+```
+oc patch --type=merge --patch='{"spec":{"paused":false}}' machineconfigpool/master
+```
