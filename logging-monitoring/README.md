@@ -17,11 +17,11 @@ oc create -f operatorgroup-logging.yaml
 #### Check available software-version of the operators
 ```
 oc get packagemanifest elasticsearch-operator -n openshift-marketplace \
-  -o go-template='{{range .status.channels}}{{name}}{{"\n"}}{{end}}'
+  -o go-template='{{range .status.channels}}{{.name}}{{"\n"}}{{end}}'
 ```
 ```
 oc get packagemanifest cluster-logging -n openshift-marketplace \
-  -o go-template='{{range .status.channels}}{{name}}{{"\n"}}{{end}}'
+  -o go-template='{{range .status.channels}}{{.name}}{{"\n"}}{{end}}'
 ```
 ###### Modify the following value
 SOFTWARE-VERSION
