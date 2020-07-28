@@ -11,7 +11,7 @@ From time to time either `kube-apiserver`, `kube-controller-manager`, `kube-sche
 #### Redeploy kube-controller-manager static pods
 ```
 # oc patch kubecontrollermanager/cluster --type merge \
-    --patch "{\"spec\"\"forceRedeploymentReason\":\"Forcing new revision with random number $RANDOM to make message unique\"}}"
+    --patch "{\"spec\":{\"forceRedeploymentReason\":\"Forcing new revision with random number $RANDOM to make message unique\"}}"
 ```
 #### Redeploy kube-scheduler static pods
 ```
