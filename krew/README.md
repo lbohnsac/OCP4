@@ -20,13 +20,13 @@
 ##### Update KREW plugins
 
 ```
-# kubectl krew update
+# oc krew update
 ```
 
 ##### Search KREW plugins
 
 ```
-# kubectl krew search
+# oc krew search
 NAME                            DESCRIPTION                                         INSTALLED
 access-matrix                   Show an RBAC access matrix for server resources     no
 advise-psp                      Suggests PodSecurityPolicies for cluster.           no
@@ -37,11 +37,11 @@ auth-proxy                      Authentication proxy to a pod or service        
 ##### Install a KREW plugin
 
 ```
-kubectl krew install access-matrix
+oc krew install access-matrix
 ```
 
 ##### Uninstall a KREW plugin
 
 ```
-kubectl krew uninstall access-matrix
+oc krew uninstall access-matrix
 ```
