@@ -1,4 +1,4 @@
-  ---
+---
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfigPool
 metadata:
