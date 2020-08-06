@@ -19,6 +19,7 @@ data:
           resources:
             requests:
               storage: 100Gi
+          storageClassName: ""
           selector:
             matchLabels:
               infrapvc: "prometheus"
@@ -32,6 +33,7 @@ data:
           resources:
             requests:
               storage: 20Gi
+          storageClassName: ""
           selector:
             matchLabels:
               infrapvc: "alertmanager"
