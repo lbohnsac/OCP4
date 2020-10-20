@@ -2,8 +2,8 @@
 
 Open the related firewall ports for keepalived vrrp (Virtual Router Redundancy Protocol) communication
 ```
-# firewall-cmd -add-rich-rule=’rule protocol value=”vrrp” accept’
-# firewall-cmd -add-rich-rule=’rule protocol value=”vrrp” accept’ --permanent
+# firewall-cmd --add-rich-rule=’rule protocol value=”vrrp” accept’
+# firewall-cmd -a-dd-rich-rule=’rule protocol value=”vrrp” accept’ --permanent
 ```
 
 Check if there's already keepalived on the network
