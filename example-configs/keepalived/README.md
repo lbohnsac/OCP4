@@ -20,4 +20,4 @@ Router_id 51 is mostly in use because this id is used in many examples and blog 
 
 So it's a good idea to choose anything but 51 as the router_id!
 
-> The valid range to use fir the router_id is 1 - 255
+> The valid range to use for the router_id is 1 - 255
