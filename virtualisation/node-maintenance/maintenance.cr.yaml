@@ -1,7 +1,7 @@
 apiVersion: nodemaintenance.kubevirt.io/v1beta1
 kind: NodeMaintenance
 metadata:
-  name: <NODE-NAME>-maintenance
+  name: <NODE_NAME>-maintenance
 spec:
-  nodeName: <NODE-NAME>
+  nodeName: <NODE_NAME>
   reason: "<REASON>"
