@@ -1,0 +1,14 @@
+---
+apiVersion: console.openshift.io/v1
+kind: ConsoleNotification
+metadata:
+  name: bannertop
+spec:
+  text: <YOUR_TEXT>                                 # DELETE IF NOT NEEDED
+  link:                                             # DELETE IF NOT NEEDED
+    href: '<LINK_URL>'                              # DELETE IF NOT NEEDED
+    text: <LINK_TEXT>                               # DELETE IF NOT NEEDED
+  location: BannerTop
+  color: '<TEXT_COLOUR>'
+  backgroundColor: '<BACKGROUND_COLOUR>'
+...
