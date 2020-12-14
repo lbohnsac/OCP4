@@ -1,4 +1,5 @@
-# NFS-PROVISIONER
+# NFS-PROVISIONER 
+###### (tested with nfs-provisioner v3.1.0-k8s1.11 on OCP 4.4.x and OCP 4.5.x)
 
 ## Prerequisites
 We need a NFS server with a configured export (allowed to write for all cluster nodes and 777 as permission)
