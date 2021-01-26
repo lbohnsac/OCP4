@@ -18,7 +18,7 @@ networking:
   clusterNetwork:
   - cidr: 10.128.0.0/14                                     <-- CHECK ME
     hostPrefix: 23
-  networkType: OpenShiftSDN
+  networkType: OpenShiftSDN                                 <-- CHANGE IT TO `OVNKubernetes` IF NEEDED
   serviceNetwork:
   - 172.30.0.0/16                                           <-- CHECK ME
 platform:
