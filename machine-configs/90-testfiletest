@@ -1,4 +1,3 @@
-
 ---
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
@@ -9,13 +8,7 @@ metadata:
   spec:
   config:
     ignition:
-      config: {}
-      security:
-        tls: {}
-      timeouts: {}
       version: 3.1.0
-    networkd: {}
-    passwd: {}
     storage:
       files:
       - contents:
@@ -23,5 +16,4 @@ metadata:
           verification: {}
         mode: 644 
         path: /etc/test.txt
-  osImageURL: ""
 ...
