@@ -3,8 +3,8 @@ apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
 metadata:
   labels:
-    kubernetes.io/hostname: <HOSTNAME>
-  name: 90-<HOSTNAME>-testfiletest
+    machineconfiguration.openshift.io/role: compute
+  name: 90-compute-testfiletest
   spec:
   config:
     ignition:
@@ -13,7 +13,6 @@ metadata:
       files:
       - contents:
           source: data:text/plain;charset=utf-8;base64,dGVzdAo=
-          verification: {}
         mode: 644 
         path: /etc/test.txt
 ...
