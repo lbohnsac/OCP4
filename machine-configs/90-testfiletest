@@ -5,7 +5,7 @@ metadata:
   labels:
     machineconfiguration.openshift.io/role: compute
   name: 90-compute-testfiletest
-  spec:
+spec:
   config:
     ignition:
       version: 3.1.0
