@@ -1,0 +1,15 @@
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  labels:
+    operators.coreos.com/keepalived-operator.openshift-operators: ""
+  name: keepalived-operator
+  namespace: openshift-operators
+spec:
+  channel: alpha
+  installPlanApproval: Automatic
+  name: keepalived-operator
+  source: community-operators
+  sourceNamespace: openshift-marketplace
+...
