@@ -1,0 +1,12 @@
+---
+apiVersion: redhatcop.redhat.io/v1alpha1
+kind: KeepalivedGroup
+metadata:
+  name: keepalivedgroup-infra
+  namespace: keepalived-operator
+spec:
+  image: registry.redhat.io/openshift4/ose-keepalived-ipfailover
+  interface: <INTERFACE_NAME>
+  nodeSelector:
+    node-role.kubernetes.io/infra: ""
+...
