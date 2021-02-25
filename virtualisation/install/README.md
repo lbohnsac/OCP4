@@ -24,7 +24,7 @@
 
 #### Deploy the Openshift Virtualization Operator
 
-#####For Openshift 4.5
+##### For Openshift 4.5
 ```
 # oc create -f OCP4.5/hyperconverged-2.4.yaml
 ```
