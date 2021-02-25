@@ -18,7 +18,7 @@
 ```
 
 ##### For Openshift 4.6
-````
+```
 # oc create -f OCP4.6/operator-subscription-kubevirt-hyperconverged-2.5.yaml
 ```
 
