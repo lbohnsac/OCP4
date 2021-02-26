@@ -15,8 +15,16 @@ oc create -f operatorgroup-local-storage.yaml
 oc get packagemanifest local-storage-operator -n openshift-marketplace \
   --template='{{range .status.channels}}{{.name}}{{"\n"}}{{end}}'
 ```
+###### Modify the following value
+SOFTWARE-VERSION
 
-#### Replace <SOFTWARE-VERSION> in subscription-local-storage.yaml and create it
+in subscription-local-storage.yaml
+
+Pick the same version as your cluster 
+```
+sed -i 's/<SOFTWARE-VERSION>/<VERSION YOU PICKED>/' operator-subscription-es.yaml
+```
+#### Create the subscription
 ```
 oc create -f subscription-local-storage.yaml
 ```
