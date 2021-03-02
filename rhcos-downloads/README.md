@@ -1,6 +1,6 @@
 # RHCOS (Red Hat Core OS) image download URLs
 
-## Installer kernel
+## Installer kernel / Live kernel (since 4.6.1)
 #### OCP 4.3.0
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.3/4.3.0/rhcos-4.3.0-x86_64-installer-kernel
@@ -36,6 +36,10 @@
 #### OCP 4.6.1
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.6/4.6.1/rhcos-4.6.1-x86_64-live-kernel-x86_64
+```
+#### OCP 4.6.8
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.6/4.6.8/rhcos-4.6.8-x86_64-live-kernel-x86_64
 ```
 
 ## Installer initramfs
