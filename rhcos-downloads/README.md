@@ -41,6 +41,10 @@
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.6/4.6.8/rhcos-4.6.8-x86_64-live-kernel-x86_64
 ```
+#### OCP 4.7.0
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.0/rhcos-4.7.0-x86_64-live-kernel-x86_64
+```
 
 ## Installer initramfs / Live initramfs (since 4.6.1)
 #### OCP 4.3.0
@@ -83,6 +87,10 @@
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.6/4.6.8/rhcos-4.6.8-x86_64-live-initramfs.x86_64.img
 ```
+#### OCP 4.7.0
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.0/rhcos-4.7.0-x86_64-live-initramfs.x86_64.img
+```
 
 ## RHCOS metal BIOS image
 #### OCP 4.3.0
@@ -124,6 +132,10 @@
 #### OCP 4.6.8
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.6/4.6.8/rhcos-4.6.8-x86_64-metal.x86_64.raw.gz
+```
+#### OCP 4.7.0
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.0/rhcos-4.7.0-x86_64-metal.x86_64.raw.gz
 ```
 
 ## Always run restorecon after you placed the downloaded files
