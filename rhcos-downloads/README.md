@@ -121,6 +121,10 @@
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.6/4.6.1/rhcos-4.6.1-x86_64-metal.x86_64.raw.gz
 ```
+#### OCP 4.6.8
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.6/4.6.8/rhcos-4.6.8-x86_64-metal.x86_64.raw.gz
+```
 
 ## Always run restorecon after you placed the downloaded files
 
