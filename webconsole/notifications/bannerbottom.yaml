@@ -9,6 +9,6 @@ spec:
     href: '<LINK_URL>'                              # DELETE IF NOT NEEDED
     text: <LINK_TEXT>                               # DELETE IF NOT NEEDED
   location: BannerBottom
-  color: '<TEXT_COLOUR>'
-  backgroundColor: '<BACKGROUND_COLOUR>'
+  color: '<TEXT_COLOUR>'                            # define the colour as RGB value e.g. #ffffff for white
+  backgroundColor: '<BACKGROUND_COLOUR>'            # define the colour as RGB value e.g. #ff0000 for red
 ...
