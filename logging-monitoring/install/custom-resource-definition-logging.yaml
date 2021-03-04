@@ -8,6 +8,13 @@ spec:
   managementState: "Managed"
   logStore:
     type: "elasticsearch"
+    retentionPolicy:
+      application:
+        maxAge: 1d
+      infra:
+        maxAge: 7d
+      audit:
+        maxAge: 7d
     elasticsearch:
       nodeCount: 3
       storage:
@@ -20,6 +27,12 @@ spec:
         requests:
           cpu: "1"
           memory: "16Gi"
+      proxy:
+        limits:
+          memory: 256Mi
+        requests:
+          cpu: "1"
+          memory: 256Mi
   visualization:
     type: "kibana"
     kibana:
