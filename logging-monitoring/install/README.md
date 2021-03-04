@@ -31,6 +31,9 @@ and
 in operator-subscription-es.yaml
 
 Pick the same version as your cluster 
+
+> ##### If you want to use version 5 use `opertor-subscription-logging-5.yaml`!
+
 ```
 sed -i 's/<SOFTWARE-VERSION>/<VERSION YOU PICKED>/' operator-subscription-es.yaml
 ```
