@@ -1,0 +1,11 @@
+---
+apiVersion: fileintegrity.openshift.io/v1alpha1
+kind: FileIntegrity
+metadata:
+  name: compute-fileintegrity
+  namespace: openshift-file-integrity
+spec:
+  nodeSelector:
+      node-role.kubernetes.io/compute: ""
+  config: {}
+...
