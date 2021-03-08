@@ -5,7 +5,7 @@ metadata:
   name: file-integrity-operator
   namespace: openshift-file-integrity
 spec:
-  channel: "4.7"
+  channel: "<SOFTWARE-VERSION>"
   installPlanApproval: Automatic
   name: file-integrity-operator
   source: redhat-operators
