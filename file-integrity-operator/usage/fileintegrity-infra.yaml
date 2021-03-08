@@ -6,6 +6,7 @@ metadata:
   namespace: openshift-file-integrity
 spec:
   nodeSelector:
-      node-role.kubernetes.io/infra: ""
-  config: {}
+    node-role.kubernetes.io/infra: ""
+  config:
+    gracePeriod: 900 # default 900 seconds
 ...
