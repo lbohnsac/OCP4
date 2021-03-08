@@ -52,4 +52,11 @@ data:
     openshiftStateMetrics:
       nodeSelector:
         node-role.kubernetes.io/infra: ""
+    thanosQuerier:
+      nodeSelector:
+        node-role.kuberneste.io/infra: ""
+      resources:
+        limits:
+          cpu: 1
+          memory: 4Gi
 ...
