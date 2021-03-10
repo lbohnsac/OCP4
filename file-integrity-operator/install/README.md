@@ -18,15 +18,15 @@ oc get packagemanifest file-integrity-operator -n openshift-marketplace \
   ###### Modify the following value
   SOFTWARE-VERSION
 
-  in subscription-local-storage.yaml
+  in subscription-file-integrity.yaml
 
   Pick the same version as your cluster
   ```
-  sed -i 's/<SOFTWARE-VERSION>/<VERSION YOU PICKED>/' operator-subscription-es.yaml
+  sed -i 's/<SOFTWARE-VERSION>/<VERSION YOU PICKED>/' subscription-file-integrity.yaml
   ```
   #### Create the subscription
   ```
-  oc create -f subscription-local-storage.yaml
+  oc create -f subscription-file-integrity.yaml
   ```
 
   #### Watch the installation
