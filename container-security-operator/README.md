@@ -1,6 +1,6 @@
 # Install the container-security-operator (new since 4.6)
 
-You don't have to create a project or an operator group, because the container-security-operator installs itself in the openshift-operators project and also uses the OG global-operators that already exist there.`
+You don't have to create a project or an operator group, because the container-security-operator installs itself in the project `openshift-operators` and also uses the operatorgroup `global-operators` that already exist there.`
 
 #### Change into the project openshift-operators
 ```
