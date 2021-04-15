@@ -1,9 +1,9 @@
 apiVersion: v1
-baseDomain: example.com                                     <-- CHANGE ME
-proxy:                                                      <-- CHANGE OR DELETE ME
-  httpProxy: http://<username>:<pswd>@<ip>:<port>           <-- CHANGE OR DELETE ME
-  httpsProxy: http://<username>:<pswd>@<ip>:<port>          <-- CHANGE OR DELETE ME
-  noProxy: example.com                                      <-- CHANGE OR DELETE ME
+baseDomain: example.com                                                                <-- CHANGE ME
+proxy:                                                                                 <-- CHANGE OR DELETE ME
+  httpProxy: http://<username>:<pswd>@<ip>:<port>                                      <-- CHANGE OR DELETE ME
+  httpsProxy: http://<username>:<pswd>@<ip>:<port>                                     <-- CHANGE OR DELETE ME
+  noProxy: example.com                                                                 <-- CHANGE OR DELETE ME
 compute:
 - hyperthreading: Enabled
   name: worker
@@ -13,30 +13,30 @@ controlPlane:
   name: master
   replicas: 3
 metadata:
-  name: test                                                <--CHANGE ME
+  name: test                                                                           <--CHANGE ME
 networking:
   clusterNetwork:
-  - cidr: 10.128.0.0/14                                     <-- CHECK ME
+  - cidr: 10.128.0.0/14                                                                <-- CHECK ME
     hostPrefix: 23
-  networkType: OpenShiftSDN                                 <-- CHANGE IT TO `OVNKubernetes` IF NEEDED
+  networkType: OpenShiftSDN                                                            <-- CHANGE IT TO `OVNKubernetes` IF NEEDED
   serviceNetwork:
-  - 172.30.0.0/16                                           <-- CHECK ME
+  - 172.30.0.0/16                                                                      <-- CHECK ME
 platform:
   none: {}
 fips: false
-pullSecret: '{"auths": ...}'                                <-- CHANGE ME
-sshKey: 'ssh-ed25519 AAAA...'                               <-- CHANGE ME
-additionalTrustBundle: |                                    <-- CHANGE OR DELETE ME
-  -----BEGIN CERTIFICATE-----                               <-- CHANGE OR DELETE ME
-  ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ        <-- CHANGE OR DELETE ME
-  -----END CERTIFICATE-----                                 <-- CHANGE OR DELETE ME
-imageContentSources:                                        <-- CHANGE OR DELETE ME
-- mirrors:                                                  <-- CHANGE OR DELETE ME
-  - <bastion_host_name>:5000/<repo_name/ocp-release         <-- CHANGE OR DELETE ME
-  source: quay.io/openshift-release-dev/ocp-release         <-- CHANGE OR DELETE ME
-- mirrors:                                                  <-- CHANGE OR DELETE ME
-  - <bastion_host_name>:5000/<repo_name>/ocp-v4.0-art-dev   <-- CHANGE OR DELETE ME
-  source: registry.svc.ci.openshift.org/ocp/release         <-- CHANGE OR DELETE ME
-- mirrors:                                                  <-- CHANGE OR DELETE ME
-  - <bastion_host_name>:5000/<repo_name>/release            <-- CHANGE OR DELETE ME
-  source: registry.svc.ci.openshift.org/ocp/release         <-- CHANGE OR DELETE ME
+pullSecret: '{"auths": ...}'                                                           <-- CHANGE ME
+sshKey: 'ssh-ed25519 AAAA...'                                                          <-- CHANGE ME
+additionalTrustBundle: |                                                               <-- CHANGE OR DELETE ME
+  -----BEGIN CERTIFICATE-----                                                          <-- CHANGE OR DELETE ME
+  ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ                                   <-- CHANGE OR DELETE ME
+  -----END CERTIFICATE-----                                                            <-- CHANGE OR DELETE ME
+imageContentSources:                                                                   <-- CHANGE OR DELETE ME
+- mirrors:                                                                             <-- CHANGE OR DELETE ME
+  - <bastion_host_name>:5000/<repo_name/ocp-release                                    <-- CHANGE OR DELETE ME
+  source: quay.io/openshift-release-dev/ocp-release                                    <-- CHANGE OR DELETE ME
+- mirrors:                                                                             <-- CHANGE OR DELETE ME
+  - <bastion_host_name>:5000/<repo_name>/ocp-v4.0-art-dev                              <-- CHANGE OR DELETE ME
+  source: registry.svc.ci.openshift.org/ocp/release                                    <-- CHANGE OR DELETE ME
+- mirrors:                                                                             <-- CHANGE OR DELETE ME
+  - <bastion_host_name>:5000/<repo_name>/openshift-release-dev/ocp-v4.0-art-dev        <-- CHANGE OR DELETE ME
+  source: quay.io/openshift-release-dev/ocp-v4.0-art-dev                               <-- CHANGE OR DELETE ME
