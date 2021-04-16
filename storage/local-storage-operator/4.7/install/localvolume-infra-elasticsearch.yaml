@@ -1,0 +1,23 @@
+---
+apiVersion: local.storage.openshift.io/v1
+kind: LocalVolume
+metadata:
+  name: localfs-infra-es
+  namespace: openshift-local-storage
+spec:
+  nodeSelector:
+    nodeSelectorTerms:
+    - matchExpressions:
+      - key: kubernetes.io/hostname
+        operator: In
+        values:
+        - infra01
+        - infra02
+        - infra03
+  storageClassDevices:
+  - storageClassName: localfs-sc-elasticsearch
+    volumeMode: Filesystem
+    fsType: xfs
+    devicePaths:
+          - /path/to/dev
+...

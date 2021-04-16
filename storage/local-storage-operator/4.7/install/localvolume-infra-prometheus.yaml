@@ -1,0 +1,23 @@
+---
+apiVersion: local.storage.openshift.io/v1
+kind: LocalVolume
+metadata:
+  name: localfs-infra-prometheus
+  namespace: openshift-local-storage
+spec:
+  nodeSelector:
+    nodeSelectorTerms:
+    - matchExpressions:
+      - key: kubernetes.io/hostname
+        operator: In
+        values:
+        - <NAME OF INFRA NODE 1>
+        - <NAME OF INFRA NODE 2>
+        - <NAME OF INFRA NODE 3>
+  storageClassDevices:
+  - storageClassName: localfs-sc-prometheus
+    volumeMode: Filesystem
+    fsType: xfs
+    devicePaths:
+          - /path/to/dev
+...
