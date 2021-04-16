@@ -11,13 +11,13 @@ spec:
       - key: kubernetes.io/hostname
         operator: In
         values:
-        - infra01
-        - infra02
-        - infra03
+        - <NAME OF INFRA NODE 1>
+        - <NAME OF INFRA NODE 2>
+        - <NAME OF INFRA NODE 3>
   storageClassDevices:
   - storageClassName: localfs-sc-elasticsearch
     volumeMode: Filesystem
     fsType: xfs
     devicePaths:
-          - /path/to/dev
+    - /path/to/dev
 ...

@@ -16,5 +16,5 @@ spec:
   - storageClassName: localblock-infra-registry
     volumeMode: Block
     devicePaths:
-          - /path/to/dev
+    - /path/to/dev
 ...

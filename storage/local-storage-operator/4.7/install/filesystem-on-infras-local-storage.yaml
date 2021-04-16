@@ -17,7 +17,7 @@ spec:
   storageClassDevices:
     - storageClassName: localfilesystem-sc
       volumeMode: Filesystem
-       fsType: xfs
-        devicePaths:
-          - /dev/vdb
+      fsType: xfs
+      devicePaths:
+      - /dev/vdb
 ...
