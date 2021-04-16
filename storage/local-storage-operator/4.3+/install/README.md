@@ -20,9 +20,9 @@ SOFTWARE-VERSION
 
 in subscription-local-storage.yaml
 
-Pick the same version as your cluster 
+Pick the same version as your cluster
 ```
-sed -i 's/<SOFTWARE-VERSION>/<VERSION YOU PICKED>/' operator-subscription-es.yaml
+sed -i 's/<SOFTWARE-VERSION>/<VERSION YOU PICKED>/' subscription-local-storage.yaml
 ```
 #### Create the subscription
 ```
