@@ -1,4 +1,4 @@
-# Install the local-storage-operator (new since 4.3)
+# Install the local-storage-operator (4.7)
 
 #### Create the namespace local-storage
 ```
@@ -22,7 +22,7 @@ in subscription-local-storage.yaml
 
 Pick the same version as your cluster
 ```
-sed -i 's/<SOFTWARE-VERSION>/<VERSION YOU PICKED>/' operator-subscription-es.yaml
+sed -i 's/<SOFTWARE-VERSION>/<VERSION YOU PICKED>/' subscription-local-storage.yaml
 ```
 #### Create the subscription
 ```
