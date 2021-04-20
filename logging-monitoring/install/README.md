@@ -27,10 +27,10 @@ oc get packagemanifest cluster-logging -n openshift-marketplace \
 SOFTWARE-VERSION
 
 in operator-subscription-logging.yaml
-and 
+and
 in operator-subscription-es.yaml
 
-Pick the same version as your cluster 
+Pick the same version as your cluster
 
 > ##### If you want to use version 5 use `opertor-subscription-logging-5.yaml`!
 
@@ -45,7 +45,7 @@ sed -i 's/<SOFTWARE-VERSION>/<VERSION YOU PICKED>/' operator-subscription-loggin
 oc create -f operator-subscription-es.yaml
 ```
 ```
-oc create -f operator-subscription-loggging.yaml
+oc create -f operator-subscription-logging.yaml
 ```
 
 #### Create Role-based Access Control (RBAC) for Prometheus
@@ -71,18 +71,29 @@ oc get crd | grep -e clusterloggings -e elasticsearches
 ```
 oc create -f configmap-cluster-monitoring-config.yaml
 ```
+
 or if infra nodes are available
+
+with claimref defined (check claimref setup)
 ```
-oc create -f configmap-cluster-monitoring-config-on-infras.yaml
+oc create -f configmap-cluster-monitoring-config-on-infras-claimref.yaml
 ```
 
-#### Deploy cluster logging components 
+with storageclass defined (check storageClassName name and volumeMode)
+```
+oc create -f configmap-cluster-monitoring-config-on-infras-sc.yaml
+```
+
+#### Deploy cluster logging components
 ```
 oc create -f custom-resource-definition-logging.yaml
 ```
+
 or if infra nodes are available
+
+with storageClass defined (check storageClassName)
 ```
-oc create -f custom-resource-definition-logging-on-infras.yaml
+oc create -f custom-resource-definition-logging-on-infras-sc.yaml
 ```
 
 #### Check the deployment
