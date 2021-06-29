@@ -1,5 +1,4 @@
 # RHCOS (Red Hat Core OS) image download URLs
-
 ## Installer kernel / Live kernel (since 4.6.1)
 #### OCP 4.3.0
 ```
@@ -48,6 +47,10 @@
 #### OCP 4.7.7
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.7/rhcos-4.7.7-x86_64-live-kernel-x86_64
+```
+#### OCP 4.7.13
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.13/rhcos-4.7.137-x86_64-live-kernel-x86_64
 ```
 ## Installer initramfs / Live initramfs (since 4.6.1)
 #### OCP 4.3.0
@@ -98,6 +101,10 @@
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.7/rhcos-4.7.7-x86_64-live-initramfs.x86_64.img
 ```
+#### OCP 4.7.13
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.13/rhcos-4.7.13-x86_64-live-initramfs.x86_64.img
+```
 ## Metal BIOS image
 #### OCP 4.3.0
 ```
@@ -139,7 +146,6 @@
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.6/4.6.8/rhcos-4.6.8-x86_64-metal.x86_64.raw.gz
 ```
-
 #### OCP 4.7.0
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.0/rhcos-4.7.0-x86_64-metal.x86_64.raw.gz
@@ -148,18 +154,20 @@
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.7/rhcos-4.7.7-x86_64-metal.x86_64.raw.gz
 ```
+#### OCP 4.7.13
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.13/rhcos-4.7.13-x86_64-metal.x86_64.raw.gz
+```
 ##  Live rootfs (needed since 4.6.1)
 
 #### OCP 4.6.1
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.6/4.6.1/rhcos-4.6.1-x86_64-live-rootfs.x86_64.img
 ```
-
 #### OCP 4.6.8
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.6/4.6.8/rhcos-4.6.8-x86_64-live-rootfs.x86_64.img
 ```
-
 #### OCP 4.7.0
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.0/rhcos-4.7.0-x86_64-live-rootfs.x86_64.img
@@ -168,8 +176,11 @@
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.7/rhcos-4.7.7-x86_64-live-rootfs.x86_64.img
 ```
+#### OCP 4.7.13
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.13/rhcos-4.7.13-x86_64-live-rootfs.x86_64.img
+```
 ## Always run restorecon after you placed the downloaded files
-
 ```
 # restorecon -RFv <PATH TO THE LOCATION>
 ```
