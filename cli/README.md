@@ -13,7 +13,7 @@
   column
 ```
 
-##### Set variable VERSION to the choosen version
+##### To download and install the oc client set variable VERSION to the choosen version
 
 ```
 ### Set OpenShift Version
@@ -27,4 +27,18 @@ rm -Rf oc
 rm -Rf kubectl
 oc version
 kubectl version
+```
+
+##### To download and install the oc installer set variable VERSION to the choosen version
+
+```
+### Set OpenShift Version
+VERSION=4.x.x #change me
+
+wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/$VERSION/openshift-install-linux-$VERSION.tar.gz
+tar -xf openshift-install-linux-$VERSION.tar.gz
+sudo cp -v openshift-install /usr/bin/
+rm -Rf openshift-instrall-linux-$VERSION.tar.gz
+rm -Rf openshift-install
+openshift-install version
 ```
