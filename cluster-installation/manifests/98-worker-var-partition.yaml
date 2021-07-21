@@ -10,7 +10,8 @@ spec:
       version: 3.1.0
     storage:
       disks:
-      - device: /dev/<device_name> 
+      - device: /dev/<device_name>
+        wipeTable: true
         partitions:
         - sizeMiB: <partition_size>
           startMiB: <partition_start_offset> 
@@ -19,6 +20,7 @@ spec:
       filesystems:
         - path: /var
           device: /dev/disk/by-partlabel/var
+          wipeFilesystem: true
           format: xfs
     systemd:
       units:
