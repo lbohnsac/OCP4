@@ -1,0 +1,33 @@
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfig
+metadata:
+  labels:
+    machineconfiguration.openshift.io/role: worker
+  name: 98-var-partition
+spec:
+  config:
+    ignition:
+      version: 3.1.0
+    storage:
+      disks:
+      - device: /dev/<device_name> 
+        partitions:
+        - sizeMiB: <partition_size>
+          startMiB: <partition_start_offset> 
+          label: var
+      filesystems:
+        - path: /var
+          device: /dev/disk/by-partlabel/var
+          format: xfs
+    systemd:
+      units:
+        - name: var.mount
+          enabled: true
+          contents: |
+            [Unit]
+            Before=local-fs.target
+            [Mount]
+            Where=/var
+            What=/dev/disk/by-partlabel/var
+            [Install]
+            WantedBy=local-fs.target
