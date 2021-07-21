@@ -15,6 +15,7 @@ spec:
         - sizeMiB: <partition_size>
           startMiB: <partition_start_offset> 
           label: var
+          wipePartitionEntry: true
       filesystems:
         - path: /var
           device: /dev/disk/by-partlabel/var
