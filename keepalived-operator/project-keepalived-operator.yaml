@@ -1,0 +1,7 @@
+---
+apiVersion: project.openshift.io/v1
+kind: ProjectRequest
+metadata:
+  name: keepalived-operator
+  annotations:
+    openshift.io/node-selector: ""
