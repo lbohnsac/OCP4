@@ -28,11 +28,12 @@ spec:
           cpu: "1"
           memory: "16Gi"
       proxy:
-        limits:
-          memory: 256Mi
-        requests:
-          cpu: "1"
-          memory: 256Mi
+        resources:
+            limits:
+              memory: 256Mi
+            requests:
+              cpu: "1"
+              memory: 256Mi
   visualization:
     type: "kibana"
     kibana:
