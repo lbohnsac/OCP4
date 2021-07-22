@@ -22,6 +22,11 @@
 # oc create -f OCP4.6/operator-subscription-kubevirt-hyperconverged-2.5.yaml
 ```
 
+##### For Openshift 4.7
+```
+# oc create -f OCP4.7/operator-subscription-kubevirt-hyperconverged-2.6.yaml
+```
+
 #### Deploy the Openshift Virtualization Operator
 
 ##### For Openshift 4.5
@@ -32,6 +37,11 @@
 ##### For Openshift 4.6
 ```
 # oc create -f OCP4.6/hyperconverged-2.5.yaml
+```
+
+##### For Openshift 4.7
+```
+# oc create -f OCP4.7/hyperconverged-2.5.yaml
 ```
 
 #### Check the installation
