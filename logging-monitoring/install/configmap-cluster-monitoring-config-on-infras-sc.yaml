@@ -50,7 +50,7 @@ data:
         node-role.kubernetes.io/infra: ""
     thanosQuerier:
       nodeSelector:
-        node-role.kuberneste.io/infra: ""
+        node-role.kubernetes.io/infra: ""
       resources:
         limits:
           cpu: 1
