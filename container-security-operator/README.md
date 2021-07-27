@@ -28,5 +28,5 @@ oc get packagemanifest container-security-operator -n openshift-marketplace \
 
 #### Watch the installation
   ```
-  watch -n 1 -d oc get csvs -n oc get csvs -n openshift-operators
+  watch -n 1 -d oc get csvs -n openshift-operators
   ```

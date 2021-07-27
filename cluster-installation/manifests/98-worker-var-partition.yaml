@@ -3,7 +3,7 @@ kind: MachineConfig
 metadata:
   labels:
     machineconfiguration.openshift.io/role: worker
-  name: 98-var-partition
+  name: 98-worker-var-partition
 spec:
   config:
     ignition:
