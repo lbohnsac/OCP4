@@ -1,0 +1,20 @@
+FEATURE_STORAGE_REPLICATION: false
+DISTRIBUTED_STORAGE_CONFIG:
+  default:
+  - RadosGWStorage
+  - access_key: <USERNAME>
+    bucket_name: <BUCKETNAME>
+    hostname: <SERVERNAME_OR_IP>
+    is_secure: false
+    port: '<PORT>'
+    secret_key: <PASSWORD>
+    storage_path: /datastorage/registry
+DISTRIBUTED_STORAGE_DEFAULT_LOCATIONS:
+- default
+DISTRIBUTED_STORAGE_PREFERENCE:
+- default
+FEATURE_USER_CREATION: true
+REGISTRY_TITLE: <REGISTRY_TITLE>
+SUPER_USERS:
+  - <SUPERUSERNAME>
+SERVER_HOSTNAME: <REGISTRY_FQDN>
