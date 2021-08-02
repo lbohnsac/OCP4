@@ -25,7 +25,7 @@
 #### Place the registry on the infrastructure nodes
 
 ```
-# oc patch configs.imageregistry.operator.openshift.io/cluster --type=merge \
+# oc patch configs.imageregistry.operator.openshift.io/cluster --type merge \
   --patch '{"spec":{"nodeSelector":{"node-role.kubernetes.io/infra": ""}}}'
 ```
 
@@ -40,6 +40,6 @@
 #### Expose the default route
 
 ```
-# oc patch configs.imageregistry,operator.openshift.io/cluster --type=merge \
+# oc patch configs.imageregistry,operator.openshift.io/cluster --type merge \
   --patch '{{"spec": {"defaultRoute": true}}'
 ```
