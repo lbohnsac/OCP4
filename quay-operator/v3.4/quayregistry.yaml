@@ -3,7 +3,7 @@ apiVersion: quay.redhat.com/v1
 kind: QuayRegistry
 metadata:
   name: quay-registry
-  namespace: quay
+  namespace: quay-enterprise
 spec:
   configBundleSecret: quay-config-bundle
   components:
