@@ -57,6 +57,10 @@
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.8/4.8.2/rhcos-4.8.2-x86_64-live-kernel-x86_64
 ```
+#### OCP 4.8.14
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.8/4.8.14/rhcos-4.8.14-x86_64-live-kernel-x86_64
+```
 
 ## Installer initramfs / Live initramfs (since 4.6.1)
 #### OCP 4.3.0
@@ -114,6 +118,10 @@
 #### OCP 4.8.2
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.8/4.8.2/rhcos-4.8.2-x86_64-live-initramfs.x86_64.img
+```
+#### OCP 4.8.14
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.8/4.8.14/rhcos-4.8.14-x86_64-live-initramfs.x86_64.img
 ```
 
 ## Metal BIOS image
@@ -173,6 +181,10 @@
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.8/4.8.2/rhcos-4.8.2-x86_64-metal.x86_64.raw.gz
 ```
+#### OCP 4.8.14
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.8/4.8.14/rhcos-4.8.14-x86_64-metal.x86_64.raw.gz
+```
 
 ##  Live rootfs (needed since 4.6.1)
 
@@ -200,6 +212,10 @@
 ```
 # wget hhttps://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.8/4.8.2/rhcos-4.8.2-x86_64-live-rootfs.x86_64.img
 ```
+#### OCP 4.8.14
+```
+# wget hhttps://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.8/4.8.14/rhcos-4.8.14-x86_64-live-rootfs.x86_64.img
+```
 
 ## Red Hat Enterprise Linux CoreOS (RHCOS) iso image (available since 4.6.1)
 
@@ -226,6 +242,10 @@
 #### OCP 4.8.2
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.8/4.8.2/rhcos-4.8.2-x86_64-live.x86_64.iso
+```
+#### OCP 4.8.14
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.8/4.8.14/rhcos-4.8.14-x86_64-live.x86_64.iso
 ```
 
 ## Always run restorecon after you placed the downloaded files
