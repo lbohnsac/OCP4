@@ -4,12 +4,10 @@
 
 ```
 # curl -s https://mirror.openshift.com/pub/openshift-v4/clients/ocp/ | \
-  awk '{print $5}' | \
-  grep -v latest | \
-  grep -v Parent | \
+  grep '<span class="name">' | \
   grep -o '\<4.[0-9]*.[0-9]*\>' | \
   uniq | \
-  sort | \
+  sort -V | \
   column
 ```
 
