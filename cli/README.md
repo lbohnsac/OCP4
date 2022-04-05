@@ -5,7 +5,7 @@
 ```
 # curl -s https://mirror.openshift.com/pub/openshift-v4/clients/ocp/ | \
   grep '<span class="name">' | \
-  grep -o '\<4.[0-9]*.[0-9]*\>' | \
+  grep -o '\<4.[0-9]*.[0-9]*.[0-9]*\>' | \
   sort -uV | \
   column
 ```
