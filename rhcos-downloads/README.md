@@ -65,6 +65,10 @@
 ```
 # wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.9/4.9.0/rhcos-4.9.0-x86_64-live-kernel-x86_64
 ```
+#### OCP 4.10.3
+```
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.10/4.10.3/rhcos-4.10.3-x86_64-live-kernel-x86_64
+```
 
 ## Installer initramfs / Live initramfs (since 4.6.1)
 #### OCP 4.3.0
