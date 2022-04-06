@@ -35,7 +35,7 @@ VERSION=4.x.x #change me
 wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/$VERSION/openshift-install-linux-$VERSION.tar.gz
 tar -xf openshift-install-linux-$VERSION.tar.gz
 sudo cp -v openshift-install /usr/bin/
-rm -Rf openshift-instrall-linux-$VERSION.tar.gz
+rm -Rf openshift-install-linux-$VERSION.tar.gz
 rm -Rf openshift-install
 openshift-install version
 ```
