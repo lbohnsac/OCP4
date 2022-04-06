@@ -246,7 +246,7 @@
 ```
 #### OCP 4.10.3
 ```
-# wget hhttps://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.10/4.10.3/rhcos-4.10.3-x86_64-live-rootfs.x86_64.img
+# wget https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.10/4.10.3/rhcos-4.10.3-x86_64-live-rootfs.x86_64.img
 ```
 
 ## Red Hat Enterprise Linux CoreOS (RHCOS) iso image (available since 4.6.1)
