@@ -16,7 +16,7 @@ oc get packagemanifest openshift-local-storage-operator -n openshift-marketplace
 #### Patch the Operator subscription to use the target `<SOFTWARE-VERSION>` reported from the package manifests list
 
 ```shell
-oc patch openshift-local-storage subscription local-storage-operator --type merge \
+oc patch -n openshift-local-storage subscription local-storage-operator --type merge \
   --patch '{"spec":{"channel":"<SOFTWARE-VERSION>"}}'
 ```
 
